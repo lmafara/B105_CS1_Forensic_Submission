@@ -16,7 +16,7 @@
 
 This investigation examines browser activity recorded in a Google Chrome History database, submitted as evidence in a suspected online sale conducted through Craigslist and settled via a cryptocurrency payment.
 
-The investigation focused on reconstructing the full sequence of browser activity — from the original Craigslist posting, through buyer communication over Gmail, to a payment receipt shared via Imgur and verified against a public blockchain explorer and a cryptocurrency exchange. The main objective was to determine whether the browser history contained sufficient evidence to reconstruct this transaction end-to-end and to attribute the activity to a specific browser profile with an appropriate level of confidence.
+The investigation focused on reconstructing the full sequence of browser activity  from the original Craigslist posting, through buyer communication over Gmail, to a payment receipt shared via Imgur and verified against a public blockchain explorer and a cryptocurrency exchange. The main objective was to determine whether the browser history contained sufficient evidence to reconstruct this transaction end-to-end and to attribute the activity to a specific browser profile with an appropriate level of confidence.
 
 The investigation was conducted using Kali Linux and SQLite-based forensic analysis, while maintaining the original evidence separately from the working copies used for examination.
 
@@ -52,7 +52,7 @@ The investigation used the following evidence files:
 - `Chrome_History_Recreation_Imgur`
 - `Chrome_History_to_Database_Demo`
 
-`History` is the primary case evidence file. `Chrome_History_Cryptocurrency_Lab.db` was confirmed to be an identical copy of `History` (matching MD5 hash) and was treated as a verification copy rather than independent evidence. The four "Recreation" databases and the generic "Demo" database are instructor-supplied controlled datasets used to validate the examination methodology against known, isolated examples of each activity type (Craigslist posting flow, Gmail navigation, Imgur linking) — they are not part of the case's evidentiary chain.
+`History` is the primary case evidence file. `Chrome_History_Cryptocurrency_Lab.db` was confirmed to be an identical copy of `History` (matching MD5 hash) and was treated as a verification copy rather than independent evidence. The four "Recreation" databases and the generic "Demo" database are instructor-supplied controlled datasets used to validate the examination methodology against known, isolated examples of each activity type (Craigslist posting flow, Gmail navigation, Imgur linking) they are not part of the case's evidentiary chain.
 
 The original evidence was copied into an `evidence` directory before analysis. Working copies were used for database examination to avoid modifying the original evidence.
 
@@ -120,7 +120,7 @@ All 74 visit records and 1 download record were merged into a single UTC-ordered
 
 ## 8. Limitations
 
-- Message *content* is not stored in the History database — only that a reply was composed and its timestamp; the actual wording of any wallet-address message could not be independently confirmed from this evidence alone.
+- Message *content* is not stored in the History database only that a reply was composed and its timestamp; the actual wording of any wallet-address message could not be independently confirmed from this evidence alone.
 - Browser history does not capture events beyond the browser itself (e.g., physical shipment or delivery of any item sold).
 - The recreation databases validate technique, not the case itself — they must not be cited as direct evidence of what occurred in the primary case.
 

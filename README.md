@@ -10,7 +10,7 @@
 **Primary Evidence:** Google Chrome History Database
 **Status:** Completed
 
----
+
 
 ## 1. Investigation Overview
 
@@ -20,7 +20,6 @@ The investigation focused on reconstructing the full sequence of browser activit
 
 The investigation was conducted using Kali Linux and SQLite-based forensic analysis, while maintaining the original evidence separately from the working copies used for examination.
 
----
 
 ## 2. Investigation Objectives
 
@@ -39,7 +38,7 @@ The main objectives of this investigation were to:
 - Construct a chronological master timeline.
 - Preserve evidence integrity through hashing and documented analysis.
 
----
+
 
 ## 3. Evidence Examined
 
@@ -57,7 +56,7 @@ The investigation used the following evidence files:
 
 The original evidence was copied into an `evidence` directory before analysis. Working copies were used for database examination to avoid modifying the original evidence.
 
----
+
 
 ## 4. Investigation Structure
 
@@ -79,7 +78,7 @@ B105_CS1_Forensic_Submission/
 - **logs/** — hash manifests and query execution logs
 - **screenshots/** — numbered figures referenced from the final report
 
----
+
 
 ## 5. Tools & Methodology
 
@@ -100,7 +99,7 @@ B105_CS1_Forensic_Submission/
 8. Merge all findings into a single chronological, UTC-normalised timeline.
 9. Map findings against the case's stage-based hypothesis and assign calibrated confidence levels.
 
----
+
 
 ## 6. Key Findings (Summary)
 
@@ -112,13 +111,12 @@ B105_CS1_Forensic_Submission/
 
 Full findings, decoded segment tables, and the calibrated final conclusion are documented in the accompanying report.
 
----
+
 
 ## 7. Integrated Timeline
 
 All 74 visit records and 1 download record were merged into a single UTC-ordered timeline (`queries/master_timeline.csv`), used as the basis for the report's Integrated Timeline appendix.
 
----
 
 ## 8. Limitations
 
@@ -126,13 +124,11 @@ All 74 visit records and 1 download record were merged into a single UTC-ordered
 - Browser history does not capture events beyond the browser itself (e.g., physical shipment or delivery of any item sold).
 - The recreation databases validate technique, not the case itself — they must not be cited as direct evidence of what occurred in the primary case.
 
----
 
 ## 9. Conclusion
 
 The browser history evidence supports a coherent, chronological reconstruction of an online sale posted on Craigslist, negotiated over Gmail, and settled via a cryptocurrency payment independently verified across two blockchain-explorer platforms. Confidence is high for the posting, payment, and verification stages, and lower for stages involving message content or real-world fulfilment that fall outside what browser history can directly evidence.
 
----
 
 ## Author
 
